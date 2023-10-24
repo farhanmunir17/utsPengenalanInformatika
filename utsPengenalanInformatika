@@ -1,20 +1,32 @@
 ## 1.1 Latar Belakang
 
-alasan saya membuat website ini adalah untuk memudahkan penjual (saya) dan kounsumen membeli dan menjual barang dagangan nya karena saya memiliki produk yaitu durian kupas
+alasan saya membuat website ini adalah untuk memudahkan penjual (saya) dan kounsumen membeli dan menjual barang nya karena saya memiliki produk yaitu durian kupas
 
 ## 1.2. Deksripsi Teknologi Informasi
 
-bla bla bla
+perangkat komputer yg digunakan untuk melakukan pemesanan barang di dalam toko dengan sistem self service
 
 ## 1.3. Branding
 
-bla bla bla
+merek: KLINIK DURIAN
+tagline : 
+kampanye : 
+~membuat (website/tampilan) di dalam komputer dengan sistem self service membuat pengguna dapat melihat,membaca detail produk kemudian dapat memesan sesuai keinginan pembeli dan (di dalamnya dapat menghitung jumlah barang,total harga,diskon,dan kembalian)
+pengguna sasaran :
+~usia 10+
+sasaran web/project : 
+~sesorang yg sudah bisa membaca
+sasaran dagangan :
+~20-45 sesorang yang sudah memiliki pekerjaan/uang tetap karena harga produk yg cukup tinggi
+tema:
+~mudah
+~sederhana
+~efisien
+~cepat
 
-## 2. User Story
-
-bla | bla | bla | bla
----|---|---|---
-bla | bla | bla | ⭐⭐⭐⭐⭐
+## 2. User Story  
+1. |pengguna | melihat detail produk | sehingga mengetahui produk mana yg diinginkan | ⭐⭐⭐⭐⭐
+2. |pengguna | dapat memesan  | sehingga dapat langsung mengetahui berapa jumlah yg dibeli,harga yg harus dibayar,kembalian  | ⭐⭐⭐⭐⭐
 
 ## 3. Struktur Data
 
@@ -22,7 +34,7 @@ Cara membuat aneka macam bentuk grafik menggunakan mermaid.js bisa lihat di [htt
 
 ```mermaid
 erDiagram
-    RUJAK ||--o{ SAYUR : tersusun
+   HOMEPAGE ||--o{ SAYUR : tersusun
     PEMBELI ||--|{ RUJAK : beli
 ```
 
