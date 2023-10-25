@@ -1,19 +1,26 @@
 ## 1.1 Latar Belakang
 
-alasan saya membuat website ini adalah untuk memudahkan penjual dan kounsumen untuk bertransaksi dengan mudah, dengan menggunakan website ini user dapat melihat bebrbagai macam jenis durian dan jika ingin membeli sangat mudah, dapat melihat rating sehingga konsumen mengetahui produk mana yang menjadi favorit
+Online shop kini menjadi trend karena kemudahan nya untuk berbelanja tanpa harus keluar rumah dan dapat meminimalisir biaya dengan itu saya tertarik membuat website ini untuk memudahkan konsumen bertransaksi dengan mudah, dengan menggunakan website ini user dapat melihat berbagai macam jenis produk yang tersedia dan jika ingin membeli sangat mudah, dapat melihat rating sehingga konsumen mengetahui produk mana yang menjadi favorit
+Cara kerja:
+1. menggunakan website dengan sistem online agar memudahkan pembeli yang berada di luar kota tanpa harus datang ke toko
+2. menggunakan perangkat komputer yg tersedia di dalam toko yang digunakan untuk melakukan pemesanan barang dengan sistem self service
+
 ## 1.2. Deksripsi Teknologi Informasi
-
-1. menggunakan perangkat komputer yg tersedia di dalam toko yang digunakan untuk melakukan pemesanan barang dengan sistem self service
-2. website dengan sistem online
+1.Database menggunakan JSON (Jenis ini memungkinkan para pengguna dapat melakukan, melihat, dan memodifikasi data.)
+2.Frontend menggunakan HTML,CSS,JAVASCRIPT
+3.Backend menggunakan java dan frameworknya
+4.Untuk Design/gambaran awal aplikasinya saya menggunakan FIGMA,
+5.Untuk Membuat programnya menggunakan Visual Studio Code,
+6.Operasi OS menggunakan Windows
 ## 1.3. Branding
-
 merek: KLINIK DURIAN
 tagline : 
-kampanye : 
-~membuat (website/tampilan) di dalam komputer dengan sistem self service membuat pengguna dapat melihat,membaca detail produk kemudian dapat memesan sesuai keinginan pembeli dan (di dalamnya dapat menghitung jumlah barang,total harga,diskon,dan kembalian)
+campaign : 
+*~membuat (website/tampilan) di dalam komputer dengan sistem self service & website online (untuk pembeli luar kota) membuat pengguna dapat melihat, membaca detail produk kemudian dapat memesan sesuai keinginan pembeli dan (di dalamnya dapat mengetahui jumlah barang, total harga, diskon, dan kembalian)
 pengguna sasaran :
-~20 sesorang yang sudah memiliki pekerjaan/uang tetap karena harga produk yg cukup tinggi
-seseorang yang menyukai durian 
+~20 sesorang yang sudah memiliki pekerjaan/uang tetap (karena harga produk yg cukup mahal)
+seseorang yang menyukai kuliner 
+seseorang yang menyukai durian
 tema:
 ~mudah
 ~sederhana
@@ -21,33 +28,54 @@ tema:
 ~cepat
 
 ## 2. User Story  
-1. |pengguna | melihat detail produk | sehingga mengetahui produk mana yg diinginkan | ⭐⭐⭐⭐⭐
-   |pengguna |  | sehingga mengetahui produk mana yg diinginkan | ⭐⭐⭐⭐⭐
-2. |pengguna | memesan produk  | sehingga dapat langsung mengetahui berapa jumlah yg dibeli,diskon yang didapatkan, harga yg harus dibayar, kembalian  | ⭐⭐⭐⭐⭐
+ |pengguna | melihat daftar produk | sehingga mengetahui produk mana yg diinginkan | ⭐⭐⭐⭐⭐
+ |pengguna | melihat detail produk | sehingga mengetahui deskripsi,ukuran,harga produk| ⭐⭐⭐⭐⭐
+ |pengguna | memesan produk  | sehingga dapat langsung mengetahui berapa jumlah yg dibeli,diskon yang didapatkan, harga yg harus dibayar, kembalian  | ⭐⭐⭐⭐⭐
+ |pengguna | melihat rating produk | sehingga mengetahui rekomendasi produk| ⭐⭐⭐⭐
+ |pengguna | mencari produk | sehingga memudahkan pengguna menemukan produk yg dicari| ⭐⭐⭐⭐⭐
+ |pengguna | menambahkan produk ke favorit | sehingga memudahkan pengguna untuk mencari produk favorit nya| ⭐⭐⭐⭐⭐
+ |pengguna | memasukan nama | sehingga dapat mengetahui siapa pemesan| ⭐⭐⭐⭐⭐
+ |pengguna | keterangan member | sehingga dapat mengetahui apakah dia terdaftar sebagai member atau belum| ⭐⭐⭐⭐⭐
+ |pengguna | kode barang| sehingga memudahkan pengguna menemukan produk yg dicari| ⭐⭐⭐⭐⭐
+ |pengguna | total harga | sehingga dapat mengetahui berapa yang harus dibayarkan| ⭐⭐⭐⭐⭐
+ |pengguna | kembalian | sehingga dapat mengetahui kembalian dari uang yang dibayarkan| ⭐⭐⭐⭐⭐
+ |pengguna |  menambahkan alamat | sehingga dapat mengetahui kemana produk akan dikirimkan| ⭐⭐⭐⭐⭐
 
-## 3. Struktur Data
+*## 3. Struktur Data
 
-Cara membuat aneka macam bentuk grafik menggunakan mermaid.js bisa lihat di [https://mermaid.js.org/syntax/entityRelationshipDiagram.html](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) 
-
-```mermaid
 erDiagram
-   HOMEPAGE ||--o{ SAYUR : tersusun
-    PEMBELI ||--|{ RUJAK : beli
-```
+   HOME PAGE ||--o{ ORDER : places
+    CUSTOMER {
+        string name
+        string custNumber
+        string sector
+    }
+    ORDER ||--|{ LINE-ITEM : contains
+    ORDER {
+        int orderNumber
+        string deliveryAddress
+    }
+    LINE-ITEM {
+        string productCode
+        int quantity
+        float pricePerUnit
+    }
 
 ## 4. Arsitektur Sistem
 
-Masih pake mermaid.js juga bisa lihat flowchart di [https://mermaid.js.org/syntax/flowchart.html](https://mermaid.js.org/syntax/flowchart.html)
+flowchart TD
+    id1[(Database: MySQL)] <--> id2[Aplikasi Web Backend: Javascript - Laravel] <--> id3[Web Server: Javascript - Laravel]  
+
 
 ## 5. Teknologi, Library, dan Framework
-
+front end : HTML, CSS, javascript
 back end: java
-UI/UX:
+UI/UX: figma
+
 
 ## 6. Desain User Experience dan User Interface
 
 Bisa load image 
-![Contoh](https://fastly.picsum.photos/id/318/536/354.jpg?hmac=Ixy-wle80nudIR_cmnF1iY2y6rMUH7_9sk-BP1fTpM8)
 
 ## 7. Demonstrasi Video
 
