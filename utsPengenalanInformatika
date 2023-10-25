@@ -1,11 +1,10 @@
 ## 1.1 Latar Belakang
 
-alasan saya membuat website ini adalah untuk memudahkan penjual (saya) dan kounsumen membeli dan menjual barang nya karena saya memiliki produk yaitu durian kupas
-
+alasan saya membuat website ini adalah untuk memudahkan penjual dan kounsumen untuk bertransaksi dengan mudah, dengan menggunakan website ini user dapat melihat bebrbagai macam jenis durian dan jika ingin membeli sangat mudah, dapat melihat rating sehingga konsumen mengetahui produk mana yang menjadi favorit
 ## 1.2. Deksripsi Teknologi Informasi
 
-perangkat komputer yg digunakan untuk melakukan pemesanan barang di dalam toko dengan sistem self service
-
+1. menggunakan perangkat komputer yg tersedia di dalam toko yang digunakan untuk melakukan pemesanan barang dengan sistem self service
+2. website dengan sistem online
 ## 1.3. Branding
 
 merek: KLINIK DURIAN
@@ -13,11 +12,8 @@ tagline :
 kampanye : 
 ~membuat (website/tampilan) di dalam komputer dengan sistem self service membuat pengguna dapat melihat,membaca detail produk kemudian dapat memesan sesuai keinginan pembeli dan (di dalamnya dapat menghitung jumlah barang,total harga,diskon,dan kembalian)
 pengguna sasaran :
-~usia 10+
-sasaran web/project : 
-~sesorang yg sudah bisa membaca
-sasaran dagangan :
-~20-45 sesorang yang sudah memiliki pekerjaan/uang tetap karena harga produk yg cukup tinggi
+~20 sesorang yang sudah memiliki pekerjaan/uang tetap karena harga produk yg cukup tinggi
+seseorang yang menyukai durian 
 tema:
 ~mudah
 ~sederhana
@@ -26,7 +22,8 @@ tema:
 
 ## 2. User Story  
 1. |pengguna | melihat detail produk | sehingga mengetahui produk mana yg diinginkan | ⭐⭐⭐⭐⭐
-2. |pengguna | dapat memesan  | sehingga dapat langsung mengetahui berapa jumlah yg dibeli,harga yg harus dibayar,kembalian  | ⭐⭐⭐⭐⭐
+   |pengguna |  | sehingga mengetahui produk mana yg diinginkan | ⭐⭐⭐⭐⭐
+2. |pengguna | memesan produk  | sehingga dapat langsung mengetahui berapa jumlah yg dibeli,diskon yang didapatkan, harga yg harus dibayar, kembalian  | ⭐⭐⭐⭐⭐
 
 ## 3. Struktur Data
 
@@ -44,7 +41,8 @@ Masih pake mermaid.js juga bisa lihat flowchart di [https://mermaid.js.org/synta
 
 ## 5. Teknologi, Library, dan Framework
 
-bla bla bla
+back end: java
+UI/UX:
 
 ## 6. Desain User Experience dan User Interface
 
