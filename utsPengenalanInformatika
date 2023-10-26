@@ -6,11 +6,11 @@ Cara kerja:
 2. menggunakan perangkat komputer yg tersedia di dalam toko yang digunakan untuk melakukan pemesanan barang dengan sistem self service
 
 ## 1.2. Deksripsi Teknologi Informasi
-1.Database menggunakan JSON (Jenis ini memungkinkan para pengguna dapat melakukan, melihat, dan memodifikasi data.)
+1.Database menggunakan JSON (Jenis ini memungkinkan para pengguna dapat melakukan, melihat, dan memodifikasi data.) (javascript)
 2.Frontend menggunakan HTML,CSS,JAVASCRIPT
-3.Backend menggunakan java dan frameworknya
-4.Untuk Design/gambaran awal aplikasinya saya menggunakan FIGMA,
-5.Untuk Membuat programnya menggunakan Visual Studio Code,
+3.Backend menggunakan java dan javascript frameworknya Angular (apk/web yang berinteraksi dengan pengguna dengan secara dinamis menulis ulang halaman web saat ini dengan data baru dari server web, bukan metode default browser web yang memuat seluruh halaman baru.)
+4.Untuk Design/gambaran awal aplikasinya saya menggunakan FIGMA
+5.Untuk Membuat programnya menggunakan Visual Studio Code
 6.Operasi OS menggunakan Windows
 ## 1.3. Branding
 merek: KLINIK DURIAN
@@ -21,6 +21,7 @@ pengguna sasaran :
 ~20 sesorang yang sudah memiliki pekerjaan/uang tetap (karena harga produk yg cukup mahal)
 seseorang yang menyukai kuliner 
 seseorang yang menyukai durian
+
 tema:
 ~mudah
 ~sederhana
@@ -30,15 +31,15 @@ tema:
 ## 2. User Story  
  |pengguna | melihat daftar produk | sehingga mengetahui produk mana yg diinginkan | ⭐⭐⭐⭐⭐
  |pengguna | melihat detail produk | sehingga mengetahui deskripsi,ukuran,harga produk| ⭐⭐⭐⭐⭐
- |pengguna | memesan produk  | sehingga dapat langsung mengetahui berapa jumlah yg dibeli,diskon yang didapatkan, harga yg harus dibayar, kembalian  | ⭐⭐⭐⭐⭐
+ |pengguna | memesan produk  | sehingga dapat langsung mengetahui berapa jumlah yg dibeli,diskon yang didapatkan, harga yg harus dibayar, kembalian  | ⭐⭐⭐⭐
  |pengguna | melihat rating produk | sehingga mengetahui rekomendasi produk| ⭐⭐⭐⭐
- |pengguna | mencari produk | sehingga memudahkan pengguna menemukan produk yg dicari| ⭐⭐⭐⭐⭐
- |pengguna | menambahkan produk ke favorit | sehingga memudahkan pengguna untuk mencari produk favorit nya| ⭐⭐⭐⭐⭐
+ |pengguna | mencari produk | sehingga memudahkan pengguna menemukan produk yg dicari| ⭐⭐⭐⭐
+ |pengguna | menambahkan produk ke favorit | sehingga memudahkan pengguna untuk mencari produk favorit nya| ⭐⭐⭐⭐
  |pengguna | memasukan nama | sehingga dapat mengetahui siapa pemesan| ⭐⭐⭐⭐⭐
- |pengguna | keterangan member | sehingga dapat mengetahui apakah dia terdaftar sebagai member atau belum| ⭐⭐⭐⭐⭐
- |pengguna | kode barang| sehingga memudahkan pengguna menemukan produk yg dicari| ⭐⭐⭐⭐⭐
+ |pengguna | keterangan member | sehingga dapat mengetahui apakah dia terdaftar sebagai member atau belum| ⭐⭐⭐⭐
+ |pengguna | kode barang| sehingga memudahkan pengguna menemukan produk yg dicari| ⭐⭐⭐
  |pengguna | total harga | sehingga dapat mengetahui berapa yang harus dibayarkan| ⭐⭐⭐⭐⭐
- |pengguna | kembalian | sehingga dapat mengetahui kembalian dari uang yang dibayarkan| ⭐⭐⭐⭐⭐
+ |pengguna | kembalian | sehingga dapat mengetahui kembalian dari uang yang dibayarkan| ⭐⭐⭐⭐
  |pengguna |  menambahkan alamat | sehingga dapat mengetahui kemana produk akan dikirimkan| ⭐⭐⭐⭐⭐
 
 *## 3. Struktur Data
@@ -68,14 +69,11 @@ flowchart TD
 
 
 ## 5. Teknologi, Library, dan Framework
-front end : HTML, CSS, javascript
-back end: java
-UI/UX: figma
-
+teknologi pendukung saya menggunakan Visual Studio Code kemudian untuk framework menggunakan lavarel(Laravel adalah framework PHP yang open source dan dirancang untuk memudahkan pengembangan web dengan sintaks yang mudah dipelajari.) dan untuk library menggunakan lavarel
 
 ## 6. Desain User Experience dan User Interface
 
-Bisa load image 
+
 
 ## 7. Demonstrasi Video
 
